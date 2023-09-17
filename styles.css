@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+:root{
+    --main: #284662;
+    --white: #F1F5F9;
+    --black: #0C151D;
+    --accent: #9AB9D6;
+
+}
+
+*{
+    color: var(--white);
+    font-family: 'Open Sans ', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main);
+    display: flex;
+}
+
+.main{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: auto;
+    width: 450px;
+    height: 100vh;
+    background-color: #121F2B;
+}
+
+.input-container-1,
+.input-container-2 {
+    position: relative;
+    display: flex;
+    top: 20px;
+    width: 350px;
+    height: 150px;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #2b4b69, #243f58);
+    box-shadow:  5px 5px 14px #85a1bb,
+             -7px -7px 14px #376187;
+}
+.input-container-2{
+    position: relative;
+    top: 55px;
+    color: var(--white)
+}
+
+input[type="text"] {
+  position: absolute;
+  text-align: center; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  color: var(--white);
+  border-radius: 5px;
+  padding: 0 10px;
+  width: 349px;
+  height: 150px;
+  border: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+input::placeholder{
+    color: white;
+}
+
+.multichoice{
+    position: relative;
+    background-color: #9abcfc; /* for example, a green color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 100px;  /* This gives space between the buttons and any elements above them */
+    display: block; /* To ensure each button takes the full width and starts on a new line */
+}
+
+.multichoice:hover {
+    background-color: #8ab3ff;
+}
+
+input[type="radio"] {
+    margin-top: 20px;
+}
+
+button{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 700%);
+    padding: 15px 45px;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #a5c6e5, #8ba7c1);
+    box-shadow:  -5px 5px 0px #6b97e9;
+    cursor: pointer;
+    border: none;
+}
+
+
+button:active{
+    box-shadow: -3px 3px 0px #9abcfc;
+    background: linear-gradient(45deg, #c9e3fb, #a6c4e1);
+    color: #121F2B;
+}
+    
